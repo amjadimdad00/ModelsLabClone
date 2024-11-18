@@ -9,4 +9,3 @@ Accurate recreation of the original UI elements and styles.
 Clean and modular code structure for easy customization and scaling.
 Purpose:
 This project is for educational and non-commercial use, aimed at exploring modern frontend development practices and recreating professional-grade web designs.
-"# ModelsLabClone" 
