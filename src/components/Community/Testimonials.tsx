@@ -407,7 +407,7 @@ const Testimonials: React.FC = () => {
             </blockquote>
           </div>
         </div>
-        <span className="max-w-[70%] relative overflow-hidden w-full rounded-full h-[3px] bg-[#EFF0F6] mx-auto before:absolute before:top-0 before:left-0 before:w-[30%] before:bg-[#0024FF] dark:bg-[#FFFFFF80] before:h-full" />
+        <span className="max-w-[70%] relative overflow-hidden w-full rounded-full h-[3px] bg-[#EFF0F6] mx-auto dark:bg-[#FFFFFF80] before:h-full" />
       </div>
     </section>
   );

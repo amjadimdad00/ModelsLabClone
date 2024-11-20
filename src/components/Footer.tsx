@@ -4,8 +4,8 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-white py-10 border-t dark:bg-[#111827] justify-self-end dark:border-[#4B5563] border-gray-500/10 flex flex-col divide-y dark:divide-y-[#4B5563] divide-gray-500/10">
-      <div className="flex items-center justify-between container px-4 md:px-8 pb-5 mx-auto gap-5 flex-wrap sm:flex-nowrap">
+    <footer className="w-full bg-white py-10  dark:bg-[#111827] border-t border-[#E5E7EB] dark:border-[#3E3E3E] justify-self-end flex flex-col">
+      <div className="flex items-center justify-between container px-4 md:px-8 pb-5 mx-auto  gap-5 flex-wrap sm:flex-nowrap">
         <a href="https://modelslab.com/">
           <svg
             fill="none"
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             width={112}
             viewBox="0 0 112 20"
             xmlns="http://www.w3.org/2000/svg"
-            className="yxBNXG_spectrum-Icon yxBNXG_spectrum-Icon--sizeM inline-block h-[20px] dark:text-white text-black"
+            className="wBx8DG_spectrum-Icon wBx8DG_spectrum-Icon--sizeM inline-block h-[20px] dark:text-white text-black"
             focusable="false"
             aria-hidden="true"
             role="img"
@@ -58,88 +58,78 @@ const Footer: React.FC = () => {
         </a>
         <form className="flex items-center justify-end gap-4 w-full">
           <div
-            className="border dark:bg-[#111827] dark:border-[#4B5563] text-lg rounded-lg flex px-4 py-3 items-center max-w-sm w-full gap-2 sm:flex-nowrap"
+            className="border dark:bg-[#111827] dark:border-[#4B5563] text-lg rounded-lg flex px-4 py-3 items-center max-w-sm w-full gap-2 sm:flex-nowrap hover:border-[#BABABA] dark:hover:border-[#BABABA] focus:border-[#BABABA] dark:focus:border-[#BABABA]"
             data-rac=""
             data-required="true"
           >
             <label
               className="sr-only"
-              id="react-aria724458492-:r7:"
-              htmlFor="react-aria724458492-:r6:"
+              id="react-aria5872310412-:rf:"
+              htmlFor="react-aria5872310412-:re:"
             >
               Email
             </label>
-            <span className="inline-block h-5 aspect-square">
+            <span className="inline-block h-5 text-black/50 dark:text-white/50 aspect-square">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 20 20"
               >
                 <path
-                  className="text-black/50 dark:text-white/50 "
                   fill="currentColor"
                   d="M15.51 3.56H6.76c-2.62 0-4.37 1.31-4.37 4.38v6.12c0 3.06 1.75 4.38 4.37 4.38h8.75c2.63 0 4.38-1.32 4.38-4.38V7.94c0-3.07-1.75-4.38-4.38-4.38Zm.41 5.33-2.73 2.19c-.58.46-1.32.69-2.05.69-.74 0-1.48-.23-2.05-.7L6.35 8.9a.67.67 0 0 1-.1-.93.65.65 0 0 1 .92-.1l2.73 2.19c.67.53 1.8.53 2.46 0l2.74-2.2a.66.66 0 0 1 .82 1.03Z"
                 />
               </svg>
             </span>
             <input
-              required
+              type="email"
+              required=""
+              name="name"
               placeholder="Enter your email to get the latest news..."
-              id="react-aria724458492-:r6:"
+              id="react-aria5872310412-:re:"
               aria-label="Email"
-              aria-labelledby="react-aria 724458492-:r7:"
+              aria-labelledby="react-aria5872310412-:rf:"
               className="border-none bg-transparent text-base placeholder:text-base p-0 focus:outline-0 focus:ring-0 focus:outline-none focus:border-none w-full"
               data-rac=""
-              title=""
-              type="email"
               defaultValue=""
-              name="name"
+              title=""
             />
           </div>
           <button
             type="submit"
-            className="text-base px-4 py-3 rounded-lg bg-[#005CF0] text-white"
+            className="text-base px-4 py-3 rounded-lg bg-[#005CF0] text-white hover:bg-opacity-80 dark:hover:bg-opacity-80"
             data-rac=""
+            id="react-aria5872310412-:rj:"
           >
             Subscribe
           </button>
         </form>
       </div>
-      <div className="py-5 flex items-start justify-between container px-4 md:px-8 mx-auto gap-8 flex-wrap">
+      <div className="py-5 flex items-start justify-between container px-4 md:px-8 mx-auto gap-8 flex-wrap border-t border-[#E5E7EB] dark:border-[#3E3E3E]">
         <div className="flex flex-col gap-5 w-full max-w-[200px]">
-          <h4 className="font-[700] text-lg dark:text-white text-black">
-            Our Product
-          </h4>
-          <ul className="flex flex-col gap-2">
+          <h4 className="font-[700] text-lg">Our Product</h4>
+          <ul className="flex flex-col gap-2 text-base font-[500]">
             <li>
-              <a
-                id="TlxCgjMcyz"
-                href="https://modelslab.com/imagen"
-                className="dark:text-white text-black font-[500]  text-base"
-              >
+              <a id="TlxCgjMcyz" href="https://modelslab.com/imagen">
                 Imagen
               </a>
             </li>
             <li>
-              <a
-                className="dark:text-white text-black font-[500]  text-base"
-                id="IaRKNSjFSM"
-                href="https://modelslab.com/audio-gen"
-              >
+              <a id="IaRKNSjFSM" href="https://modelslab.com/audio-gen">
                 Audio Gen
               </a>
             </li>
             <li>
               <a
                 href="https://modelslab.com/train-model"
-                className="dark:text-white text-black font-[500] whitespace-nowrap text-base"
+                className="whitespace-nowrap"
               >
                 Train Master
               </a>
             </li>
             <li>
               <a
-                className="dark:text-white text-black font-[500] whitespace-nowrap text-base"
+                className="whitespace-nowrap"
                 href="https://modelslab.com/video-fusion"
               >
                 VideoFusion
@@ -147,7 +137,7 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a
-                className="dark:text-white text-black font-[500] whitespace-nowrap text-base"
+                className=" whitespace-nowrap"
                 href="https://modelslab.com/3d-verse"
               >
                 3D Verse
@@ -157,7 +147,7 @@ const Footer: React.FC = () => {
               <a
                 target="_blank"
                 href="https://modelslab.com/llm-api"
-                className="dark:text-white text-black font-[500] whitespace-nowrap text-base"
+                className="whitespace-nowrap"
               >
                 LLM Master
               </a>
@@ -165,13 +155,11 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5 w-full max-w-[200px]">
-          <h4 className="font-[700] text-lg text-black dark:text-white">
-            Resources
-          </h4>
+          <h4 className="font-[700] text-lg">Resources</h4>
           <ul className="flex flex-col gap-2 text-base font-[500]">
             <li>
               <a
-                className="whitespace-nowrap text-black dark:text-white"
+                className="whitespace-nowrap"
                 href="https://modelslab.com/models"
               >
                 Models
@@ -181,32 +169,22 @@ const Footer: React.FC = () => {
               <a
                 href="https://imagen.playground.modelslab.com/"
                 id="WxkToBVWic"
-                className="text-black dark:text-white"
               >
                 Playground
               </a>
             </li>
             <li>
-              <a
-                className="text-black dark:text-white"
-                id="zmOLveKutv"
-                href="https://modelslab.com/enterprise"
-              >
+              <a id="zmOLveKutv" href="https://modelslab.com/enterprise">
                 Enterprise
               </a>
             </li>
             <li>
-              <a
-                href="https://docs.modelslab.com/"
-                id="ZUkBbiKAdi"
-                className="text-black dark:text-white"
-              >
+              <a href="https://docs.modelslab.com/" id="ZUkBbiKAdi">
                 Documentation
               </a>
             </li>
             <li>
               <a
-                className="text-black dark:text-white"
                 href="https://support.modelslab.com/"
                 id="ZSCDOSDXqX"
                 target="_blank"
@@ -218,13 +196,10 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5 w-full max-w-[200px]">
-          <h4 className="font-[700] text-lg text-black dark:text-white">
-            About Us
-          </h4>
+          <h4 className="font-[700] text-lg">About Us</h4>
           <ul className="flex flex-col gap-2 text-base font-[500]">
             <li>
               <a
-                className=" text-black dark:text-white"
                 href="https://modelslab.com/support"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -233,35 +208,22 @@ const Footer: React.FC = () => {
               </a>
             </li>
             <li>
-              <a
-                id="ArnAooaHiI"
-                href="https://modelslab.com/pricing"
-                className=" text-black dark:text-white"
-              >
+              <a id="ArnAooaHiI" href="https://modelslab.com/pricing">
                 Pricing
               </a>
             </li>
             <li>
-              <a
-                id="SrFzPyzgvc"
-                href="https://modelslab.com/blog"
-                className=" text-black dark:text-white"
-              >
+              <a id="SrFzPyzgvc" href="https://modelslab.com/blog">
                 Blog
               </a>
             </li>
             <li>
-              <a
-                href="https://modelslab.canny.io/changelog"
-                id="caLrKDbGRz"
-                className=" text-black dark:text-white"
-              >
+              <a href="https://modelslab.canny.io/changelog" id="caLrKDbGRz">
                 Changelog
               </a>
             </li>
             <li>
               <a
-                className=" text-black dark:text-white"
                 target="_blank"
                 id="kROvcOMSRl"
                 rel="noopener noreferrer"
@@ -273,9 +235,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5 w-full max-w-[200px]">
-          <h4 className="font-[700] text-lg text-black dark:text-white">
-            Join Us
-          </h4>
+          <h4 className="font-[700] text-lg">Join Us</h4>
           <ul className="flex gap-2 text-base font-[500]">
             <li>
               <a
@@ -293,10 +253,7 @@ const Footer: React.FC = () => {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    className=" text-black dark:text-white"
-                    d="M18 3a5 5 0 0 1 5 5v8a5  5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
-                  />
+                  <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
                 </svg>
               </a>
             </li>
@@ -315,10 +272,7 @@ const Footer: React.FC = () => {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    className=" text-black dark:text-white"
-                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82 ,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
-                  />
+                  <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
                 </svg>
               </a>
             </li>
@@ -338,17 +292,14 @@ const Footer: React.FC = () => {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    className=" text-black dark:text-white"
-                    d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"
-                  />
+                  <path d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z" />
                 </svg>
               </a>
             </li>
             <li>
               <a
                 target="_blank"
-                href="https://twitter.com/ModelsLabAi"
+                href=" https://twitter.com/ModelsLabAi"
                 id="ZxlzGcTPGi"
                 className=" bg-black items-end justify-center w-5 h-5"
               >
@@ -361,22 +312,19 @@ const Footer: React.FC = () => {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    className="text-black dark:text-white"
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                  />
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="pt-5 flex flex-wrap items-center justify-between container mx-auto px-5 gap-5 font-[400] text-[14px]">
-        <p className="min-w-max sm:min-w-0 text-center w-full md:w-fit text-black dark:text-white">
+      <div className="pt-5 flex flex-wrap items-center justify-between container mx-auto px-5 gap-5 font-[400] border-t border-[#E5E7EB] dark:border-[#3E3E3E] text-[14px]">
+        <p className="min-w-max sm:min-w-0 text-center w-full md:w-fit">
           ModelsLab @ 2024. All rights reserved.
         </p>
         <span className="flex items-center justify-center gap-2 w-full lg:w-fit  sm:order-last lg:order-none">
-          <span className=" text-black dark:text-white">Made with</span>
+          <span>Made with</span>
           <span>
             <svg
               width={20}
@@ -392,25 +340,10 @@ const Footer: React.FC = () => {
             </svg>
           </span>
         </span>
-        <div className="flex items-center flex-wrap min-w-max lg:min-w-0 font-[500] text-[16px] gap-4">
-          <a
-            href="https://modelslab.com/terms-of-service"
-            className=" text-black dark:text-white"
-          >
-            Terms of use
-          </a>
-          <a
-            href="https://modelslab.com/refund-policy"
-            className=" text-black dark:text-white"
-          >
-            Refund Policy
-          </a>
-          <a
-            className=" text-black dark:text-white"
-            href="https://modelslab.com/privacy-policy"
-          >
-            Privacy Policy
-          </a>
+        <div className="flex items-center order-1 sm:order-none flex-wrap min-w-max lg:min-w-0 font-[500] text-[16px] gap-4">
+          <a href="https://modelslab.com/terms-of-service">Terms of use</a>
+          <a href="https://modelslab.com/refund-policy">Refund Policy</a>
+          <a href="https://modelslab.com/privacy-policy">Privacy Policy</a>
         </div>
       </div>
     </footer>

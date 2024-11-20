@@ -71,38 +71,33 @@ const AutoAI = () => {
             </a>
             <a
               to="#"
-              className="rounded-lg border-[#EFF0F6] border font-semibold text-xs py-3 px-4"
+              className="rounded-lg border-[#3E3E3E] border font-semibold text-xs py-3 px-4"
             >
               Learn More
             </a>
             <a
-              to="#"
-              className="rounded-lg border-[#EFF0F6] stroke-black dark:stroke-white text-transparent border font-semibold text-xs p-2.5"
+              href="#"
+              className="rounded-lg border border-[#E5E7EB] dark:border-[#3E3E3E] hover:border-[#BABABA] dark:hover:border-[#BABABA] stroke-black dark:stroke-white text-transparent font-semibold text-xs p-2.5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={21}
-                height={21}
                 fill="none"
-                viewBox="0 0 21 21"
-                className="yxBNXG_spectrum-Icon yxBNXG_spectrum-Icon--sizeM size-[1.273rem]"
-                focusable="false"
-                aria-hidden="true"
-                role="img"
+                viewBox="2.92 2.92 44.17 44.17"
+                className="size-[1.273rem] text-black dark:text-white"
               >
                 <path
-                  stroke="inherit"
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19.155 8.98v4.239c0 4.24-1.696 5.935-5.936 5.935H8.132c-4.24 0-5.936-1.696-5.936-5.935V8.13c0-4.24 1.696-5.935 5.936-5.935h4.24"
+                  strokeWidth="2.5"
+                  d="M45.83 20.83v10.42c0 10.42-4.16 14.58-14.58 14.58h-12.5c-10.42 0-14.58-4.16-14.58-14.58v-12.5c0-10.42 4.16-14.58 14.58-14.58h10.42"
                 />
                 <path
-                  stroke="inherit"
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19.154 8.98h-3.391c-2.544 0-3.392-.849-3.392-3.393V2.196l6.783 6.783zM6.436 11.523h5.087M6.436 14.915h3.391"
+                  strokeWidth="2.5"
+                  d="M45.83 20.83H37.5c-6.25 0-8.33-2.08-8.33-8.33V4.17l16.66 16.66Zm-31.25 6.25h12.5m-12.5 8.34h8.34"
                 />
               </svg>
             </a>

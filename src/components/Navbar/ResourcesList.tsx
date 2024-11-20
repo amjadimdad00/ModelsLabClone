@@ -38,6 +38,10 @@ const ResourcesList = ({ resourcesMenu }: { resourcesMenu: boolean }) => {
       desc: "AI Generations feeds",
     },
     {
+      title: "Voices",
+      desc: "Voices for your AI",
+    },
+    {
       title: "Monitize Model",
       desc: "Start uploading your models",
     },

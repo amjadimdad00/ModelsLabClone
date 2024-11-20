@@ -9,7 +9,7 @@ const HeroSection = () => {
         style={{ backgroundImage: 'url("/others/herobg.jpeg")' }}
       >
         <div className="w-full h-full bg-white/90 dark:bg-[#111827]/90">
-          <div className="w-full py-[5rem] xl:py-[6.7rem] 2xl:py-[9.6rem] px-4 md:px-8 container mx-auto">
+          <div className="w-full py-[5rem] xl:py-[6.65rem] 2xl:py-[9.6rem] px-4 md:px-8 container mx-auto">
             <div className="grid grid-cols-1 gap-10 place-content-stretch lg:grid-cols-2">
               <div className="w-full flex flex-col justify-center lg:items-start">
                 <p className="text-center font-[800] text-[40px] sm:text-[48px] lg:text-left">
@@ -24,11 +24,11 @@ const HeroSection = () => {
                 </p>
                 <div className="flex items-center justify-center mt-12 gap-4 lg:justify-start">
                   <a
-                    className="bg-[#005CF0] text-white font-[400] text-[14px] rounded-full px-5 py-3 flex items-center justify-center gap-2"
+                    className="bg-[#005CF0] text-white font-[500] text-[14px] rounded-full px-5 py-3 flex items-center justify-center gap-2"
                     href="https://modelslab.com/register"
                   >
                     <span className="max-w-min whitespace-nowrap">
-                      Start free trial
+                      Join 100K Developers
                     </span>
                     <svg
                       stroke="currentColor"
@@ -64,7 +64,7 @@ const HeroSection = () => {
                         fill="currentColor"
                       />
                     </svg>
-                    <span className="max-w-min whitespace-nowrap">
+                    <span className="max-w-min whitespace-nowrap font-[500]">
                       How to use
                     </span>
                   </a>
@@ -78,13 +78,6 @@ const HeroSection = () => {
                   width={300}
                   height={300}
                 />
-                {/* <Image
-                  src="/others/heroimg-dark.png"
-                  className="object-center animate-fade-right dark:block w-4/5 hidden"
-                  alt="Airship"
-                  width={300}
-                  height={300}
-                /> */}
               </div>
             </div>
           </div>

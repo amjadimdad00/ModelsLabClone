@@ -6,17 +6,14 @@ const AudioGen = () => {
       <div className="w-full mx-auto container px-4 md:px-8 py-20 grid lg:grid-cols-2 gap-10">
         <div className="w-full flex flex-col items-start justify-center">
           <h4 className="flex items-center justify-start gap-2">
-            <span className="h-8 flex text-white items-center justify-center aspect-square rounded-[10px] bg-[#4C01DF]">
+            <span className="size-[36px] flex text-white items-center justify-center aspect-square rounded-[10px] bg-[#4C01DF]">
               <svg
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="yxBNXG_spectrum-Icon yxBNXG_spectrum-Icon--sizeM"
-                focusable="false"
-                aria-hidden="true"
-                role="img"
+                className="size-[21px]"
               >
                 <path
                   d="M17.9993 16.7491C17.8393 16.7491 17.6893 16.6991 17.5493 16.5991C17.2193 16.3491 17.1493 15.8791 17.3993 15.5491C18.9692 13.4592 18.9692 10.5394 17.3993 8.44948C17.1493 8.1195 17.2193 7.64952 17.5493 7.39953C17.8793 7.14955 18.3492 7.21954 18.5992 7.54953C20.5591 10.1694 20.5591 13.8292 18.5992 16.4491C18.4492 16.6491 18.2292 16.7491 17.9993 16.7491Z"
@@ -45,48 +42,43 @@ const AudioGen = () => {
           <div className="mt-8 flex items-center justify-start gap-2">
             <a
               href="https://modelslab.com/playground/audio"
-              className="rounded-lg text-white bg-[#005CF0] font-semibold text-xs py-3 px-4"
+              className="rounded-lg  text-white bg-[#005CF0] hover:bg-opacity-80 dark:hover:bg-opacity-80 font-semibold text-xs py-3 px-4"
               target="_blank"
               rel="noopener noreferrer"
             >
               Start Generating Now
             </a>
             <a
-              className="rounded-lg border-[#EFF0F6] border font-semibold text-xs py-3 px-4"
+              className="rounded-lg border border-[#E5E7EB] dark:border-[#3E3E3E] hover:border-[#BABABA] dark:hover:border-[#BABABA] font-semibold text-xs py-3 px-4"
               href="https://modelslab.com/audio-gen"
             >
               Learn More
             </a>
             <a
               href="https://docs.modelslab.com/voice-cloning/overview"
-              className="rounded-lg border-[#EFF0F6] stroke-black dark:stroke-white text-transparent border font-semibold text-xs p-2.5"
+              className="rounded-lg border border-[#E5E7EB] dark:border-[#3E3E3E] hover:border-[#BABABA] dark:hover:border-[#BABABA] stroke-black dark:stroke-white text-transparent font-semibold text-xs p-2.5"
               target="_blank"
               rel="noopener noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={21}
-                height={21}
                 fill="none"
-                viewBox="0 0 21 21"
-                className="yxBNXG_spectrum-Icon yxBNXG_spectrum-Icon--sizeM size-[1.273rem]"
-                focusable="false"
-                aria-hidden="true"
-                role="img"
+                viewBox="2.92 2.92 44.17 44.17"
+                className="size-[1.273rem] text-black dark:text-white"
               >
                 <path
-                  stroke="inherit"
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19.155 8.98v4.239c0 4.24-1.696 5.935-5.936 5.935H8.132c-4.24 0-5.936-1.696-5.936-5.935V8.13c0-4.24 1.696-5.935 5.936-5.935h4.24"
+                  strokeWidth="2.5"
+                  d="M45.83 20.83v10.42c0 10.42-4.16 14.58-14.58 14.58h-12.5c-10.42 0-14.58-4.16-14.58-14.58v-12.5c0-10.42 4.16-14.58 14.58-14.58h10.42"
                 />
                 <path
-                  stroke="inherit"
+                  stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M19.154 8.98h-3.391c-2.544 0-3.392-.849-3.392-3.393V2.196l6.783 6.783zM6.436 11.523h5.087M6.436 14.915h3.391"
+                  strokeWidth="2.5"
+                  d="M45.83 20.83H37.5c-6.25 0-8.33-2.08-8.33-8.33V4.17l16.66 16.66Zm-31.25 6.25h12.5m-12.5 8.34h8.34"
                 />
               </svg>
             </a>

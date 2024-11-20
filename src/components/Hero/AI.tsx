@@ -54,23 +54,23 @@ const AI = () => {
               />
             </svg>
           </span>
-          <span className="font-[600] text-[16px]">Video Fusion</span>
+          <span className="font-[600] text-[16px]">VideoFusion</span>
         </a>
         <a
           href="#3d-verse"
           className="inline-flex group items-center justify-start dark:hover:bg-[#242424] gap-2 hover:bg-[#F9F9F9] p-2 hover: rounded-[20px] border border-transparent dark:hover:border-[#242424] hover:border-[#EFF0F6]"
         >
-          <span className="w-10 h-10 items-center justify-center group-hover:bg-[#DE0004]/10 group-hover:text-[#DE0004] bg-[#EFF0F6] dark:bg-[#242424] dark:group-hover:bg-[#DE0004]/10 rounded-[10px] p-2.5">
+          <span className="w-10 h-10 flex items-center justify-center aspect-square group-hover:bg-[#DE0004]/10 group-hover:text-[#DE0004] bg-[#EFF0F6] dark:bg-[#242424] dark:group-hover:bg-[#DE0004]/10 rounded-[10px] p-1.5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={20}
               fill="none"
+              viewBox="0 0 24 24"
+              className="size-full"
             >
               <path
                 fill="currentColor"
-                d="m16.109 4.733-5.225-2.816c-.55-.3-1.217-.3-1.767 0L3.892 4.733A1.193 1.193 0 0 0 3.275 5.8c0 .45.234.858.617 1.067l5.225 2.816a1.856 1.856 0 0 0 1.767 0l5.225-2.816c.383-.209.616-.609.616-1.067 0-.458-.233-.858-.616-1.067ZM8.259 10.658 3.392 8.225a1.193 1.193 0 0 0-1.158.05c-.359.225-.567.6-.567 1.017v4.591c0 .792.442 1.509 1.15 1.867l4.858 2.433a1.194 1.194 0 0 0 1.159-.05c.358-.216.566-.6.566-1.016v-4.592a2.045 2.045 0 0 0-1.141-1.867ZM17.766 8.275a1.174 1.174 0 0 0-1.158-.05l-4.858 2.433a2.076 2.076 0 0 0-1.15 1.867v4.592c0 .416.208.8.566 1.016a1.2 1.2 0 0 0 1.159.05l4.858-2.433a2.076 2.076 0 0 0 1.15-1.867V9.292c0-.417-.208-.792-.567-1.017Z"
-              />
+                d="M19.33 5.68 13.06 2.3a2.22 2.22 0 0 0-2.12 0L4.67 5.68c-.46.25-.74.73-.74 1.28 0 .54.28 1.03.74 1.28l6.27 3.38a2.23 2.23 0 0 0 2.12 0l6.27-3.38c.46-.25.74-.73.74-1.28s-.28-1.03-.74-1.28Zm-9.42 7.11L4.07 9.87A1.43 1.43 0 0 0 2 11.15v5.51c0 .95.53 1.81 1.38 2.24l5.83 2.92a1.43 1.43 0 0 0 2.07-1.28v-5.51a2.45 2.45 0 0 0-1.37-2.24Zm11.41-2.86a1.4 1.4 0 0 0-1.39-.06l-5.83 2.92a2.5 2.5 0 0 0-1.38 2.24v5.51a1.41 1.41 0 0 0 1.43 1.43c.22 0 .44-.05.64-.15l5.83-2.92A2.5 2.5 0 0 0 22 16.66v-5.51c0-.5-.25-.95-.68-1.22Z"
+              ></path>
             </svg>
           </span>
           <span className="font-[600] text-[16px]">3D Verse</span>

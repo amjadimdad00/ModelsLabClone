@@ -2,20 +2,21 @@ import React from "react";
 
 const CommunitySection: React.FC = () => {
   return (
-    <section className="w-full">
-      <div className="grid grid-cols-5 container mx-auto  px-4 md:px-8 lg:px-0 lg:min-w-full sm:grid-cols-7 lg:grid-cols-5 grid-rows-8 w-full py-20 gap-4 max-h-1/2">
+    <section className="w-full py-20">
+      <div className="grid grid-cols-5 container mx-auto  px-4 md:px-8 lg:px-0 lg:min-w-full sm:grid-cols-7 lg:grid-cols-5 grid-rows-8 w-full gap-4 max-h-1/2">
         <div className="w-full col-span-full row-span-4 lg:col-span-3 lg:row-span-3 lg:row-start-1 lg:col-start-2 px-4 pb-4 overflow-hidden">
-          <h4 className="font-[700] text-4xl text-center">
-            Join Our Community!
+          <h4 className="font-[800] text-[36px] text-center">
+            Community is waiting for you
           </h4>
-          <p className="font-[500] text-sm text-center mt-2">
-            Try our AI Image Generator Tools to create great art. Find new ideas
-            and make your artwork!
+          <p className="font-[500] text-sm text-center mt-7 text-black/80 dark:text-white/80 mx-auto max-w-2xl">
+            Explore Our AI Image Generator Tools for Creating Captivating AI
+            Generated Art. Explore a world of infinite inspiration and take your
+            artworks to new heights with our AI image generator tools.
           </p>
-          <div className="flex items-center justify-center flex-wrap mt-4 gap-2">
+          <div className="flex items-center justify-center flex-wrap mt-10 gap-2">
             <a
               href="https://discord.gg/modelslab-1033301189254729748"
-              className="bg-[#005CF0] text-white font-[400] text-[14px] rounded-full px-5 py-2.5 flex items-center justify-center gap-2"
+              className="bg-[#005CF0] text-white font-[400] hover:bg-opacity-80 dark:hover:bg-opacity-80 text-[14px] rounded-full px-5 py-2.5 flex items-center justify-center gap-2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,7 +37,7 @@ const CommunitySection: React.FC = () => {
               </svg>
             </a>
             <a
-              className="bg-[#000000] text-white font-[400] text-[14px] rounded-full px-5 py-2.5 flex items-center justify-center gap-2"
+              className="bg-black dark:bg-white dark:text-black hover:bg-opacity-80 dark:hover:bg-opacity-80 text-white font-[400] text-[14px] rounded-full px-5 py-2.5 flex items-center justify-center gap-2"
               href="https://modelslab.com/models"
             >
               <svg
@@ -48,7 +49,7 @@ const CommunitySection: React.FC = () => {
               >
                 <path
                   d="M9.83333 0.416748H4.16667C1.6875 0.416748 0.625 1.83341 0.625 3.95841V11.0417C0.625 13.1667 1.6875 14.5834 4.16667 14.5834H9.83333C12.3125 14.5834 13.375 13.1667 13.375 11.0417V3.95841C13.375 1.83341 12.3125 0.416748 9.83333 0.416748ZM4.16667 7.67716H7C7.29042 7.67716 7.53125 7.918 7.53125 8.20841C7.53125 8.49883 7.29042 8.73966 7 8.73966H4.16667C3.87625 8.73966 3.63542 8.49883 3.63542 8.20841C3.63542 7.918 3.87625 7.67716 4.16667 7.67716ZM9.83333 11.573H4.16667C3.87625 11.573 3.63542 11.3322 3.63542 11.0417C3.63542 10.7513 3.87625 10.5105 4.16667 10.5105H9.83333C10.1237 10.5105 10.3646 10.7513 10.3646 11.0417C10.3646 11.3322 10.1237 11.573 9.83333 11.573ZM11.6042 5.55216H10.1875C9.11083 5.55216 8.23958 4.68091 8.23958 3.60425V2.18758C8.23958 1.89716 8.48042 1.65633 8.77083 1.65633C9.06125 1.65633 9.30208 1.89716 9.30208 2.18758V3.60425C9.30208 4.093 9.69875 4.48966 10.1875 4.48966H11.6042C11.8946 4.48966 12.1354 4.7305 12.1354 5.02091C12.1354 5.31133 11.8946 5.55216 11.6042 5.55216Z"
-                  fill="white"
+                  fill="currentColor"
                 />
               </svg>
               <span className="max-w-min whitespace-nowrap">
@@ -86,7 +87,7 @@ const CommunitySection: React.FC = () => {
           }}
         />
         <div
-          className="hidden lg:block row-start-4 row-span-2 col-span-2 col-start-2 w-full h-full min-h-40 rounded-2xl overflow-hidden bg-cover bg-no-repeat bg-center"
+          className="hidden lg:block row-start-4 row-span-2 col-span-2 col-start-2 w-full h-full min-h-[230px] rounded-2xl overflow-hidden bg-cover bg-no-repeat bg-center"
           style={{
             backgroundImage:
               'url("https://imagedelivery.net/PP4qZJxMlvGLHJQBm3ErNg/8b16e890-c395-44ea-36ff-f1ffa94ba000/768")',
@@ -113,6 +114,14 @@ const CommunitySection: React.FC = () => {
               'url("https://imagedelivery.net/PP4qZJxMlvGLHJQBm3ErNg/8afa082f-0b10-42c8-81b5-2517e4b71500/768")',
           }}
         />
+      </div>
+      <div className="flex items-center justify-center w-full ">
+        <a
+          className="text-base px-4 py-3 rounded-lg bg-[#005CF0] text-white dark:bg-[#0062FF] mt-[25px] hover:bg-opacity-80 dark:hover:bg-opacity-80 mx-auto"
+          href="https://modelslab.com/feeds"
+        >
+          Check Our Feeds
+        </a>
       </div>
     </section>
   );
