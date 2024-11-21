@@ -5,7 +5,7 @@ import ImagenIcon from "../Svg/AI/imagen.svg";
 import VideoFusionIcon from "../Svg/AI/videofusion.svg";
 import ThreeDVerseIcon from "../Svg/AI/3dverse.svg";
 import AudioGenIcon from "../Svg/AI/audiogen.svg";
-import AutoAiIcon from "../Svg/AI/autoAI.svg";
+import AutoAiIcon from "../Svg/AI/autoai.svg";
 import LLMasterIcon from "../Svg/AI/llmaster.svg";
 
 const AI = () => {
