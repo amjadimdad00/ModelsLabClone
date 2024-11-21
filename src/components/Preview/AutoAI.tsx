@@ -64,13 +64,13 @@ const AutoAI = () => {
           </p>
           <div className="mt-8 flex items-center justify-start gap-2">
             <a
-              to="#"
+              href="#"
               className="rounded-lg bg-[#005CF0] text-white font-semibold text-xs py-3 px-4"
             >
               Coming Soon
             </a>
             <a
-              to="#"
+              href="#"
               className="rounded-lg border-[#3E3E3E] border font-semibold text-xs py-3 px-4"
             >
               Learn More

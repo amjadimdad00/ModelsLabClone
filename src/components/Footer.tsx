@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
             </span>
             <input
               type="email"
-              required=""
+              required
               name="name"
               placeholder="Enter your email to get the latest news..."
               id="react-aria5872310412-:re:"

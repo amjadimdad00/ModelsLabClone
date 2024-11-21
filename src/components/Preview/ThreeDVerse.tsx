@@ -27,7 +27,8 @@ const ThreeDVerse = () => {
             Create 3D Models with 3DVerse
           </h5>
           <p className="font-normal text-sm mt-4">
-            It's easy to make great 3D models with ModelsLab's 3D tools{" "}
+            It&apos;s easy to make great 3D models with ModelsLab&apos;s 3D
+            tools{" "}
           </p>
           <div className="mt-8 flex items-center justify-start gap-2">
             <a
