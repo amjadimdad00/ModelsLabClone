@@ -1,6 +1,6 @@
 import React from "react";
-import LLMasterIcon from "../Svg/AI/llmaster.svg";
-import DocumentIcon from "../Svg/Others/documentoutline.svg";
+import LLMasterIcon from "../../Svg/AI/llmaster.svg";
+import DocumentIcon from "../../Svg/Others/documentoutline.svg";
 
 const LLMaster = () => {
   return (

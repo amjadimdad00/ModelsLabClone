@@ -1,6 +1,6 @@
 import React from "react";
-import ThreeDVerseIcon from "../Svg/AI/3dverse.svg";
-import DocumentIcon from "../Svg/Others/documentoutline.svg";
+import ThreeDVerseIcon from "../../Svg/AI/3dverse.svg";
+import DocumentIcon from "../../Svg/Others/documentoutline.svg";
 
 const ThreeDVerse = () => {
   return (

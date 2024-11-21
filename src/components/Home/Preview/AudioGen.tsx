@@ -1,6 +1,6 @@
 import React from "react";
-import AudioGenIcon from "../Svg/AI/audiogen.svg";
-import DocumentIcon from "../Svg/Others/documentoutline.svg";
+import AudioGenIcon from "../../Svg/AI/audiogen.svg";
+import DocumentIcon from "../../Svg/Others/documentoutline.svg";
 
 const AudioGen = () => {
   return (

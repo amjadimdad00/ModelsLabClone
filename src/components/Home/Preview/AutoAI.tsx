@@ -1,6 +1,6 @@
 import React from "react";
-import AutoAiIcon from "../Svg/AI/autoai.svg";
-import DocumentIcon from "../Svg/Others/documentoutline.svg";
+import AutoAiIcon from "../../Svg/AI/autoai.svg";
+import DocumentIcon from "../../Svg/Others/documentoutline.svg";
 
 const AutoAI = () => {
   return (

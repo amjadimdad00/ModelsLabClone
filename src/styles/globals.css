@@ -9,10 +9,6 @@
   transition: all 0.1s ease-in-out;
 }
 
-.hero-section {
-  background: url("/herobg.jpeg") no-repeat cover center !important;
-}
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

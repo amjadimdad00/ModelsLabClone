@@ -1,8 +1,8 @@
 import React from "react";
 
-import TelephoneIcon from "../Svg/Others/telephone.svg";
-import DocumentIcon from "../Svg/Others/document.svg";
-import FilledDownArrow from "../Svg/Arrows/filleddownarrow.svg";
+import TelephoneIcon from "../../Svg/Others/telephone.svg";
+import DocumentIcon from "../../Svg/Others/document.svg";
+import FilledDownArrow from "../../Svg/Arrows/filleddownarrow.svg";
 
 const Questions = () => {
   return (

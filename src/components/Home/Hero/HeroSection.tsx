@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import DocumentIcon from "../Svg/Others/document.svg";
-import RightArrowRounded from "../Svg/Arrows/rightarrowrounded.svg";
+import DocumentIcon from "../../Svg/Others/document.svg";
+import RightArrowRounded from "../../Svg/Arrows/rightarrowrounded.svg";
 
 const HeroSection = () => {
   return (
@@ -50,7 +50,7 @@ const HeroSection = () => {
               <div className="hidden lg:flex items-center justify-end h-full max-h-96">
                 <Image
                   src="/others/heroimg-light.png"
-                  className="object-center animate-fade-right w-4/5"
+                  className="object-center animate-fadeRight w-4/5 duration-300"
                   alt="Airship"
                   width={300}
                   height={300}

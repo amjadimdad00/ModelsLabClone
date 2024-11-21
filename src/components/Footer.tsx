@@ -12,6 +12,7 @@ import Discord from "./Svg/Social/discord.svg";
 import Twitter from "./Svg/Social/Twitter.svg";
 import Youtube from "./Svg/Social/Youtube.svg";
 import Pinterest from "./Svg/Social/Pinterest.svg";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -66,9 +67,9 @@ const Footer: React.FC = () => {
           <h4 className="font-[700] text-lg">Our Product</h4>
           <ul className="flex flex-col gap-2 text-base font-[500]">
             <li>
-              <a id="TlxCgjMcyz" href="https://modelslab.com/imagen">
+              <Link id="TlxCgjMcyz" href="/imagen">
                 Imagen
-              </a>
+              </Link>
             </li>
             <li>
               <a id="IaRKNSjFSM" href="https://modelslab.com/audio-gen">

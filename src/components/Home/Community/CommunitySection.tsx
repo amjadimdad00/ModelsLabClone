@@ -1,8 +1,8 @@
 import React from "react";
 
 // Icon SVG
-import DocumentIcon from "../Svg/Others/document.svg"
-import RightArrowRounded from "../Svg/Arrows/rightarrowrounded.svg";
+import DocumentIcon from "../../Svg/Others/document.svg";
+import RightArrowRounded from "../../Svg/Arrows/rightarrowrounded.svg";
 
 const CommunitySection: React.FC = () => {
   return (

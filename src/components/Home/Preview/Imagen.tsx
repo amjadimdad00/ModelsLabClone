@@ -1,7 +1,7 @@
 import React from "react";
-import SendIcon from "../Svg/Others/send.svg";
-import ImagenIcon from "../Svg/AI/imagen.svg";
-import DocumentIcon from "../Svg/Others/documentoutline.svg";
+import SendIcon from "../../Svg/Others/send.svg";
+import ImagenIcon from "../../Svg/AI/imagen.svg";
+import DocumentIcon from "../../Svg/Others/documentoutline.svg";
 
 const Imagen = () => {
   return (

@@ -14,6 +14,7 @@ import DiscordIcon from "../Svg/Social/discord.svg";
 import UpArrow from "../Svg/Arrows/uparrow.svg";
 import CloseIcon from "../Svg/Others/cross.svg";
 import Hamburger from "../Svg/Others/hamburger.svg";
+import Link from "next/link";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -26,18 +27,22 @@ const Navbar = () => {
     <div className="w-full bg-white/50 dark:bg-[#111827] backdrop-blur sticky top-0 z-10">
       <nav className="w-full flex md:flex-wrap gap-1 sm:gap-4 md:gap-8 items-center container mx-auto justify-between px-4 md:px-8 py-4">
         <div className="flex items-center justify-start gap-6">
-          <a className="flex items-center">
+          <Link
+            className="focus:outline-none cursor-pointer min-w-max min-h-10 bg-[#005CF0] text-white px-4 rounded-[8px] text-center flex items-center justify-center gap-2 hover:bg-opacity-85 dark:hover:bg-opacity-85 data-[variant=outline]:border data-[variant=outline]:border-[#E5E7EB] data-[variant=outline]:bg-transparent data-[variant=outline]:hover:bg-[#005CF0]/10 data-[variant=outline]:hover:border-transparent data-[variant=outline]:hover:text-[#005CF0] data-[variant=outline]:text-black dark:data-[variant=outline]:text-white dark:data-[variant=outline]:hover:text-[#005CF0] font-[400] text-[14px] leading-[21px] data-[variant=text]:bg-transparent data-[variant=text]:border-none data-[variant=text]:text-black data-[variant=text]:px-0 dark:data-[variant=text]:bg-transparent dark:data-[variant=text]:border-none dark:data-[variant=text]:text-white"
+            data-variant="text"
+            href="/"
+          >
             <ModelsLabIcon />
-          </a>
+          </Link>
         </div>
 
         <button
-          onClick={() => setOpenMenu(!openMenu)}
           type="button"
           aria-expanded="false"
-          id="react-aria1507398811-:r1:"
+          id="react-aria9292137736-:r1:"
           className="focus:outline-none mr-2 order-first group md:hidden data-[pressed]:outline-none"
           data-rac=""
+          onClick={() => setOpenMenu(!openMenu)}
         >
           {openMenu ? (
             <CloseIcon className="w-8 h-8" />
@@ -47,13 +52,12 @@ const Navbar = () => {
         </button>
 
         {/* Nav List */}
-        <div className="flex items-center min-w-max justify-center lg:w-fit md:order-last lg:order-none grow lg:justify-start gap-8">
-          {/* Product Menu Btn */}
+        <div className="flex items-center min-w-max justify-center xl:w-fit md:order-last xl:order-none grow xl:justify-start gap-8">
           <div className="md:flex items-center justify-start hidden">
             <button
               type="button"
               aria-expanded="false"
-              id="react-aria1507398811-:r3:"
+              id="react-aria9292137736-:r5:"
               className="focus:border-none group dark:text-white text-[#005CF0] font-[500] text-sm focus:outline-none flex items-center gap-2"
               data-rac=""
               onClick={() => {
@@ -69,11 +73,11 @@ const Navbar = () => {
               />
             </button>
           </div>
-          {/* Resources Menu Btn */}
           <div className="md:flex items-center justify-start hidden">
             <button
               type="button"
-              id="react-aria1507398811-:r5:"
+              aria-expanded="false"
+              id="react-aria9292137736-:r9:"
               className="focus:border-none group dark:text-white text-gray-700 font-[500] text-sm focus:outline-none flex items-center gap-2 hover:text-[#005CF0]"
               data-rac=""
               onClick={() => {
@@ -89,7 +93,6 @@ const Navbar = () => {
               />
             </button>
           </div>
-
           <a
             className="hidden md:flex focus:border-none group dark:text-white text-gray-700 font-[500] text-sm focus:outline-none items-center gap-2 hover:text-[#005CF0]"
             href="https://modelslab.com/models"
@@ -140,12 +143,12 @@ const Navbar = () => {
 
         {/* Accessibility */}
         <div className="flex items-center justify-end gap-2">
-          {/* Dark & Light Mode Toggle */}
+          {/* DarkMode, LightMode Toggle */}
           <button
             type="button"
             className="block focus:outline-none"
             data-rac=""
-            id="react-aria3852071988-:rc:"
+            id="react-aria9292137736-:rc:"
             onClick={() =>
               theme === "dark" ? setTheme("light") : setTheme("dark")
             }
@@ -154,7 +157,7 @@ const Navbar = () => {
             <MoonIcon className="w-6 h-6 block dark:hidden" />
           </button>
 
-          {/* Discord */}
+          {/* Discord Icon */}
           <a
             className="focus:outline-none cursor-pointer min-w-max min-h-10 text-white rounded-[8px] text-center items-center justify-center gap-2 hover:bg-opacity-85 dark:hover:bg-opacity-85 data-[variant=outline]:border data-[variant=outline]:border-[#E5E7EB] data-[variant=outline]:bg-transparent data-[variant=outline]:hover:bg-[#005CF0]/10 data-[variant=outline]:hover:border-transparent data-[variant=outline]:hover:text-[#005CF0] data-[variant=outline]:text-black dark:data-[variant=outline]:text-white dark:data-[variant=outline]:hover:text-[#005CF0] font-[400] text-[14px] leading-[21px] data-[variant=text]:bg-transparent data-[variant=text]:border-none data-[variant=text]:text-black data-[variant=text]:px-0 dark:data-[variant=text]:bg-transparent dark:data-[variant=text]:border-none dark:data-[variant=text]:text-white hidden md:flex px-[11px] bg-[#5865F2]"
             href="https://discord.gg/modelslab-1033301189254729748"
@@ -162,12 +165,13 @@ const Navbar = () => {
             <DiscordIcon className="w-[17px] h-[12px]" />
           </a>
 
-          {/* Book Call & Sign Up */}
+          {/* Book Call & Sign Up Button */}
           <a
             className="focus:outline-none cursor-pointer min-w-max min-h-10 bg-[#005CF0] text-white px-4 rounded-[8px] text-center items-center justify-center gap-2 hover:bg-opacity-85 dark:hover:bg-opacity-85 data-[variant=outline]:border data-[variant=outline]:border-[#E5E7EB] data-[variant=outline]:bg-transparent data-[variant=outline]:hover:bg-[#005CF0]/10 data-[variant=outline]:hover:border-transparent data-[variant=outline]:hover:text-[#005CF0] data-[variant=outline]:text-black dark:data-[variant=outline]:text-white dark:data-[variant=outline]:hover:text-[#005CF0] font-[400] text-[14px] leading-[21px] data-[variant=text]:bg-transparent data-[variant=text]:border-none data-[variant=text]:text-black data-[variant=text]:px-0 dark:data-[variant=text]:bg-transparent dark:data-[variant=text]:border-none dark:data-[variant=text]:text-white hidden md:flex"
             data-variant="outline"
             href="https://calendly.com/support-lael/30min?month=2024-11"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Book a Call
           </a>
@@ -183,7 +187,6 @@ const Navbar = () => {
 
       {/* Product Items */}
       <ProductList productMenu={productMenu} />
-
       {/* Resources Items */}
       <ResourcesList resourcesMenu={resourcesMenu} />
     </div>

@@ -56,7 +56,7 @@ const ResourcesList = ({ resourcesMenu }: { resourcesMenu: boolean }) => {
       <div
         className={`${
           resourcesMenu ? "flex" : "hidden"
-        } absolute max-md:hidden md:top-36 md:left-3 lg:top-16 xl:top-[4.75rem] 2xl:left-[19rem] w-fit dark:bg-[#111827] bg-white p-8 rounded-2xl border dark:border-gray-700 border-black/20`}
+        } absolute max-md:hidden md:top-[8.5rem] md:left-3 lg:top-[8.5rem] xl:top-[4.75rem] 2xl:left-[19rem] w-fit dark:bg-[#111827] bg-white p-8 rounded-2xl border dark:border-gray-700 border-black/20`}
       >
         {/* Services */}
         <div className="flex flex-col gap-3 border-r dark:border-white/50 border-black/50 pr-12 xl:pr-[4.7rem]">

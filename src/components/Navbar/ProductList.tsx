@@ -12,44 +12,50 @@ const ProductList = ({ productMenu }: { productMenu: boolean }) => {
       icon: "imagen",
       title: "Imagen",
       desc: "AI Image Generation And Tools",
-      md: "hidden",
+      md: "flex",
+      href: "/imagen",
     },
     {
       icon: "audiogen",
       title: "Audio Gen",
       desc: "Work with audio using audio gen",
-      md: "hidden",
+      md: "flex",
+      href: "",
     },
     {
       icon: "3dverse",
       title: "3D Verse",
       desc: "Explore our 3D Modeling solutions",
       md: "flex",
+      href: "",
     },
     {
       icon: "videofusion",
       title: "Video Fusion",
       desc: "Create captivating videos effortlessly",
       md: "flex",
+      href: "",
     },
     {
       icon: "llmaster",
       title: "LLMaster",
       desc: "Enhance your operations with the LLM",
       md: "flex",
+      href: "",
     },
     {
       icon: "trainmaster",
       title: "Train Master",
       desc: "Train easily with Train Master",
       md: "hidden",
+      href: "",
     },
   ];
   return (
     <div
       className={`${
         productMenu ? "grid" : "hidden"
-      } grid grid-cols-3 gap-6 px-5 border border-gray-600 rounded-2xl py-5 w-fit absolute max-md:hidden md:top-36 md:left-3 lg:top-16 lg:left-3 xl:top-[4.75rem] xl:left-[11.7rem] dark:bg-[#111827] bg-white`}
+      } grid grid-cols-3 gap-6 px-5 border border-gray-600 rounded-2xl py-5 w-fit absolute max-md:hidden md:top-[8.5rem] md:left-3 lg:top-[8.5rem] lg:left-3 xl:top-[4.75rem] xl:left-3 2xl:left-[11.7rem] dark:bg-[#111827] bg-white`}
     >
       {card.map((item, idx) => {
         return (
@@ -59,7 +65,7 @@ const ProductList = ({ productMenu }: { productMenu: boolean }) => {
           >
             {item.icon === "imagen" ? (
               <span className="w-10 h-10 items-center flex justify-center group-hover:bg-imagen/10 dark:group-hover:bg-[#1D2F4D] group-hover:text-imagen bg-[#EFF0F6] dark:bg-[#242424] rounded-[10px] p-1.5">
-                <ImagenIcon className="dark:group-hover:text-[#005CF0]" />
+                <ImagenIcon className="dark:group-hover:text-[#005CF0] w-8 h-8" />
               </span>
             ) : item.icon === "audiogen" ? (
               <span className="w-10 h-10 items-center flex justify-center group-hover:bg-[#E0E9F8] dark:group-hover:bg-[#000E34] dark:bg-[#242424] rounded-[10px] p-1.5">
@@ -84,13 +90,17 @@ const ProductList = ({ productMenu }: { productMenu: boolean }) => {
             ) : (
               ""
             )}
-            <div>
+            <div
+              onClick={() => {
+                window.location.href = item.href;
+              }}
+            >
               <h1 className="text-black dark:text-white font-semibold">
                 {item.title}
               </h1>
               <p
-                className={`font-[600] text-sm text-black/50 dark:text-white/50 max-md:hidden flex max-lg:${
-                  item.md === "hidden" ? "hidden" : "flex"
+                className={`font-[600] text-sm text-black/50 dark:text-white/50 max-md:hidden ${
+                  item.md === "hidden" ? "max-lg:hidden" : "flex"
                 }`}
               >
                 {item.desc}
