@@ -11,8 +11,7 @@ const Navbar = () => {
   const [productMenu, setProductMenu] = useState(false);
   const [resourcesMenu, setResourcesMenu] = useState(false);
 
-  const { theme, setTheme, systemTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="w-full bg-white/50 dark:bg-[#111827] backdrop-blur sticky top-0 z-10">
@@ -225,7 +224,7 @@ const Navbar = () => {
             data-rac=""
             id="react-aria3852071988-:rc:"
             onClick={() =>
-              theme == "dark" ? setTheme("light") : setTheme("dark")
+              theme === "dark" ? setTheme("light") : setTheme("dark")
             }
           >
             <svg

@@ -9,7 +9,6 @@ export default function Document() {
           href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
           rel="stylesheet"
         />
-        <title>ModelsLab | Text to Image and AI Voice Generator Online</title>
       </Head>
       <body className="antialiased">
         <Main />

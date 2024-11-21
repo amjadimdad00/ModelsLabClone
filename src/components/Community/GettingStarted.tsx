@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const GettingStarted = () => {
   return (
@@ -33,15 +32,19 @@ const GettingStarted = () => {
           </div>
         </div>
         <div className="flex items-center justify-center lg:justify-end">
+          {/* Dark mode image */}
           <img
             alt="mac"
             className="lg:w-2/3 hidden dark:block"
             src="https://imagedelivery.net/PP4qZJxMlvGLHJQBm3ErNg/90925437-103b-4402-a1da-2e6797abaf00/768"
+            loading="lazy" // Add lazy loading for better performance
           />
+          {/* Light mode image */}
           <img
             alt="mac"
             className="lg:w-2/3 dark:hidden block"
             src="https://imagedelivery.net/PP4qZJxMlvGLHJQBm3ErNg/90925437-103b-4402-a1da-2e6797abaf00/768"
+            loading="lazy" // Add lazy loading for better performance
           />
         </div>
       </div>
