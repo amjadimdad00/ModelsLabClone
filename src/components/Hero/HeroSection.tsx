@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import DocumentIcon from "../Svg/others/document.svg";
-import RightArrowRounded from "../Svg/arrows/rightarrowrounded.svg";
+import DocumentIcon from "../Svg/Others/document.svg";
+import RightArrowRounded from "../Svg/Arrows/rightarrowrounded.svg";
 
 const HeroSection = () => {
   return (

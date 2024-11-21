@@ -1,10 +1,10 @@
 import React from "react";
 import ImagenIcon from "../Svg/AI/imagen.svg";
 import AudioGenIcon from "../Svg/AI/audiogen.svg";
-import ThreeDVerse from "../SVG/AI/3dverse.svg";
-import VideoFusion from "../SVG/AI/videofusion.svg";
-import LLMaster from "../SVG/AI/llmaster.svg";
-import TrainMaster from "../SVG/AI/trainmaster.svg";
+import ThreeDVerse from "../Svg/AI/3dverse.svg";
+import VideoFusion from "../Svg/AI/videofusion.svg";
+import LLMaster from "../Svg/AI/llmaster.svg";
+import TrainMaster from "../Svg/AI/trainmaster.svg";
 
 const ProductList = ({ productMenu }: { productMenu: boolean }) => {
   const card = [

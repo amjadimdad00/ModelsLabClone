@@ -1,12 +1,12 @@
 import React from "react";
 
 // Icons SVG
-import ImagenIcon from "../svg/ai/imagen.svg";
-import VideoFusionIcon from "../svg/ai/videofusion.svg";
-import ThreeDVerseIcon from "../svg/ai/3dverse.svg";
-import AudioGenIcon from "../svg/ai/audiogen.svg";
-import AutoAiIcon from "../svg/ai/autoai.svg";
-import LLMasterIcon from "../svg/ai/llmaster.svg";
+import ImagenIcon from "../Svg/AI/imagen.svg";
+import VideoFusionIcon from "../Svg/AI/videofusion.svg";
+import ThreeDVerseIcon from "../Svg/AI/3dverse.svg";
+import AudioGenIcon from "../Svg/AI/audiogen.svg";
+import AutoAiIcon from "../Svg/AI/autoAI.svg";
+import LLMasterIcon from "../Svg/AI/llmaster.svg";
 
 const AI = () => {
   return (

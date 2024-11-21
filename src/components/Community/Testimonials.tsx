@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../svg/others/star.svg";
+import Star from "../Svg/Others/star.svg";
 
 const Testimonials: React.FC = () => {
   return (
