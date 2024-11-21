@@ -1,4 +1,6 @@
 import React from "react";
+import LLMasterIcon from "../Svg/AI/llmaster.svg";
+import DocumentIcon from "../Svg/Others/documentoutline.svg";
 
 const LLMaster = () => {
   return (
@@ -7,42 +9,7 @@ const LLMaster = () => {
         <div className="w-full flex flex-col items-start justify-center">
           <h4 className="flex items-center justify-start gap-2">
             <span className="h-8 flex items-center text-white justify-center aspect-square rounded-[10px] bg-[#DCB000]">
-              <svg
-                width={25}
-                height={24}
-                viewBox="0 0 25 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="yxBNXG_spectrum-Icon yxBNXG_spectrum-Icon--sizeM"
-                focusable="false"
-                aria-hidden="true"
-                role="img"
-              >
-                <path
-                  d="M21.1609 12.7301C20.7909 12.7301 20.4809 12.4501 20.4409 12.0801C20.2009 9.88007 19.0209 7.90007 17.2009 6.64007C16.8709 6.41007 16.7909 5.96007 17.0209 5.63007C17.2509 5.30007 17.7009 5.22007 18.0309 5.45007C20.2009 6.96007 21.6009 9.32007 21.8909 11.9301C21.9309 12.3301 21.6409 12.6901 21.2409 12.7301C21.2109 12.7301 21.1909 12.7301 21.1609 12.7301Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M4.54107 12.78C4.52107 12.78 4.49107 12.78 4.47107 12.78C4.07107 12.74 3.78107 12.38 3.82107 11.98C4.09107 9.36996 5.47107 7.00996 7.62107 5.48996C7.94107 5.25996 8.40107 5.33996 8.63107 5.65996C8.86107 5.98996 8.78107 6.43996 8.46107 6.66996C6.66107 7.94996 5.49107 9.92996 5.27107 12.12C5.23107 12.5 4.91107 12.78 4.54107 12.78Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M16.7904 21.1001C15.5604 21.6901 14.2404 21.9901 12.8604 21.9901C11.4204 21.9901 10.0504 21.6701 8.77039 21.0201C8.41039 20.8501 8.27039 20.4101 8.45039 20.0501C8.62039 19.6901 9.06039 19.5501 9.42039 19.7201C10.0504 20.0401 10.7204 20.2601 11.4004 20.3901C12.3204 20.5701 13.2604 20.5801 14.1804 20.4201C14.8604 20.3001 15.5304 20.0901 16.1504 19.7901C16.5204 19.6201 16.9604 19.7601 17.1204 20.1301C17.3004 20.4901 17.1604 20.9301 16.7904 21.1001Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M12.8513 2.01001C11.3013 2.01001 10.0312 3.27001 10.0312 4.83001C10.0312 6.39001 11.2913 7.65001 12.8513 7.65001C14.4113 7.65001 15.6713 6.39001 15.6713 4.83001C15.6713 3.27001 14.4113 2.01001 12.8513 2.01001Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M5.85125 13.8701C4.30125 13.8701 3.03125 15.1301 3.03125 16.6901C3.03125 18.2501 4.29125 19.5101 5.85125 19.5101C7.41125 19.5101 8.67125 18.2501 8.67125 16.6901C8.67125 15.1301 7.40125 13.8701 5.85125 13.8701Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M19.7507 13.8701C18.2007 13.8701 16.9307 15.1301 16.9307 16.6901C16.9307 18.2501 18.1907 19.5101 19.7507 19.5101C21.3107 19.5101 22.5707 18.2501 22.5707 16.6901C22.5707 15.1301 21.3107 13.8701 19.7507 13.8701Z"
-                  fill="currentColor"
-                />
-              </svg>
+              <LLMasterIcon />
             </span>
             <span className="text-[#DCB000] font-semibold text-lg">
               LLMaster
@@ -75,27 +42,7 @@ const LLMaster = () => {
               href="#"
               className="rounded-lg border border-[#3E3E3E] dark:border-[#3E3E3E] hover:border-[#BABABA] dark:hover:border-[#BABABA] stroke-black dark:stroke-white text-transparent font-semibold text-xs p-2.5"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="2.92 2.92 44.17 44.17"
-                className="size-[1.273rem] text-black dark:text-white"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2.5"
-                  d="M45.83 20.83v10.42c0 10.42-4.16 14.58-14.58 14.58h-12.5c-10.42 0-14.58-4.16-14.58-14.58v-12.5c0-10.42 4.16-14.58 14.58-14.58h10.42"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2.5"
-                  d="M45.83 20.83H37.5c-6.25 0-8.33-2.08-8.33-8.33V4.17l16.66 16.66Zm-31.25 6.25h12.5m-12.5 8.34h8.34"
-                />
-              </svg>
+              <DocumentIcon className="dark:text-white text-white size-[1.273rem]" />
             </a>
           </div>
         </div>

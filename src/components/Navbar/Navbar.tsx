@@ -6,6 +6,12 @@ import ProductList from "./ProductList";
 import MobileNav from "./MobileNav";
 import Dialog from "./Dialog";
 
+// SVG Icons
+import SunIcon from "../Svg/DarkLight/sun.svg";
+import MoonIcon from "../Svg/DarkLight/moon.svg";
+import DiscordIcon from "../Svg/Social/discord.svg";
+import UpArrow from "../Svg/Arrows/uparrow.svg";
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [productMenu, setProductMenu] = useState(false);
@@ -110,7 +116,10 @@ const Navbar = () => {
             </svg>
           )}
         </button>
+
+        {/* Nav List */}
         <div className="flex items-center min-w-max justify-center lg:w-fit md:order-last lg:order-none grow lg:justify-start gap-8">
+          {/* Product Menu Btn */}
           <div className="md:flex items-center justify-start hidden">
             <button
               type="button"
@@ -124,22 +133,14 @@ const Navbar = () => {
               }}
             >
               <span>Product</span>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth={0}
-                viewBox="0 0 24 24"
+              <UpArrow
                 className={`w-4 h-4 duration-700 ${
                   productMenu ? "rotate-180" : ""
                 }`}
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
-              </svg>
+              />
             </button>
           </div>
+          {/* Resources Menu Btn */}
           <div className="md:flex items-center justify-start hidden">
             <button
               type="button"
@@ -152,22 +153,14 @@ const Navbar = () => {
               }}
             >
               <span>Resources</span>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth={0}
-                viewBox="0 0 24 24"
+              <UpArrow
                 className={`w-4 h-4 duration-700 ${
                   resourcesMenu ? "rotate-180" : ""
                 }`}
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
-              </svg>
+              />
             </button>
           </div>
+
           <a
             className="hidden md:flex focus:border-none group dark:text-white text-gray-700 font-[500] text-sm focus:outline-none items-center gap-2 hover:text-[#005CF0]"
             href="https://modelslab.com/models"
@@ -218,6 +211,7 @@ const Navbar = () => {
 
         {/* Accessibility */}
         <div className="flex items-center justify-end gap-2">
+          {/* Dark & Light Mode Toggle */}
           <button
             type="button"
             className="block focus:outline-none"
@@ -227,48 +221,19 @@ const Navbar = () => {
               theme === "dark" ? setTheme("light") : setTheme("dark")
             }
           >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              strokeWidth={0}
-              viewBox="0 0 512 512"
-              className="w-6 h-6 hidden dark:block"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M256 118a22 22 0 0 1-22-22V48a22 22 0 0 1 44 0v48a22 22 0 0 1-22 22zm0 368a22 22 0 0 1-22-22v-48a22 22 0 0 1 44 0v48a22 22 0 0 1-22 22zm113.14-321.14a22 22 0 0 1-15.56-37.55l33.94-33.94a22 22 0 0 1 31.11 31.11l-33.94 33.94a21.93 21.93 0 0 1-15.55 6.44zM108.92 425.08a22 22 0 0 1-15.55-37.56l33.94-33.94a22 22 0 1 1 31.11 31.11l-33.94 33.94a21.94 21.94 0 0 1-15.56 6.45zM464 278h-48a22 22 0 0 1 0-44h48a22 22 0 0 1 0 44zm-368 0H48a22 22 0 0 1 0-44h48a22 22 0 0 1 0 44zm307.08 147.08a21.94 21.94 0 0 1-15.56-6.45l-33.94-33.94a22 22 0 0 1 31.11-31.11l33.94 33.94a22 22 0 0 1-15.55 37.56zM142.86 164.86a21.89 21.89 0 0 1-15.55-6.44l-33.94-33.94a22 22 0 0 1 31.11-31.11l33.94 33.94a22 22 0 0 1-15.56 37.55zM256 358a102 102 0 1 1 102-102 102.12 102.12 0 0 1-102 102z" />
-            </svg>
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 384 512"
-              className="w-6 h-6 block dark:hidden"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
-            </svg>
+            <SunIcon className="w-6 h-6 dark:block hidden" />
+            <MoonIcon className="w-6 h-6 block dark:hidden" />
           </button>
+
+          {/* Discord */}
           <a
             className="focus:outline-none cursor-pointer min-w-max min-h-10 text-white rounded-[8px] text-center items-center justify-center gap-2 hover:bg-opacity-85 dark:hover:bg-opacity-85 data-[variant=outline]:border data-[variant=outline]:border-[#E5E7EB] data-[variant=outline]:bg-transparent data-[variant=outline]:hover:bg-[#005CF0]/10 data-[variant=outline]:hover:border-transparent data-[variant=outline]:hover:text-[#005CF0] data-[variant=outline]:text-black dark:data-[variant=outline]:text-white dark:data-[variant=outline]:hover:text-[#005CF0] font-[400] text-[14px] leading-[21px] data-[variant=text]:bg-transparent data-[variant=text]:border-none data-[variant=text]:text-black data-[variant=text]:px-0 dark:data-[variant=text]:bg-transparent dark:data-[variant=text]:border-none dark:data-[variant=text]:text-white hidden md:flex px-[11px] bg-[#5865F2]"
             href="https://discord.gg/modelslab-1033301189254729748"
           >
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              strokeWidth={0}
-              viewBox="0 0 640 512"
-              className="text-white w-[17px] h-[12px]"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" />
-            </svg>
+            <DiscordIcon className="w-[17px] h-[12px]" />
           </a>
+
+          {/* Book Call & Sign Up */}
           <a
             className="focus:outline-none cursor-pointer min-w-max min-h-10 bg-[#005CF0] text-white px-4 rounded-[8px] text-center items-center justify-center gap-2 hover:bg-opacity-85 dark:hover:bg-opacity-85 data-[variant=outline]:border data-[variant=outline]:border-[#E5E7EB] data-[variant=outline]:bg-transparent data-[variant=outline]:hover:bg-[#005CF0]/10 data-[variant=outline]:hover:border-transparent data-[variant=outline]:hover:text-[#005CF0] data-[variant=outline]:text-black dark:data-[variant=outline]:text-white dark:data-[variant=outline]:hover:text-[#005CF0] font-[400] text-[14px] leading-[21px] data-[variant=text]:bg-transparent data-[variant=text]:border-none data-[variant=text]:text-black data-[variant=text]:px-0 dark:data-[variant=text]:bg-transparent dark:data-[variant=text]:border-none dark:data-[variant=text]:text-white hidden md:flex"
             data-variant="outline"
